@@ -1,105 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Change the title below to your name or site name -->
-  <title>Your Name – Personal Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>今晚煮咩好？</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <main class="container">
+    <header>
+      <h1>今晚煮咩好？</h1>
+      <p>答幾條問題，即刻有菜式建議</p>
+    </header>
 
-  <!-- ========== NAVIGATION BAR ========== -->
-  <!-- Change the links or labels if you add more pages later -->
-  <header>
-    <nav class="navbar" aria-label="Main navigation">
-      <a href="#welcome" class="nav-brand">Your Name</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- ========== WELCOME SECTION ========== -->
-    <!-- Change the heading and paragraph text to introduce yourself -->
-    <section id="welcome" class="welcome">
-      <h1>Hello, I'm Your Name</h1>
-      <p class="tagline">A [programme or role]</p>
-      <p>Welcome to my personal website. I'm glad you're here.</p>
-    </section>
-
-    <!-- ========== ABOUT ME SECTION ========== -->
-    <!-- Replace the sentences below with 2–3 true sentences about yourself -->
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        I am learning web development and building simple, accessible sites.
-        This page is a starting point that I can update as I grow.
-      </p>
-      <p>
-        Outside of coding I enjoy exploring new ideas and improving a little every day.
-      </p>
-    </section>
-
-    <!-- ========== SKILLS AND INTERESTS ========== -->
-    <!-- Change the three list items to match your real skills or interests -->
-    <section id="skills" class="skills">
-      <h2>Skills and Interests</h2>
-      <ul>
-        <li>Learning HTML and CSS</li>
-        <li>Building clear, readable layouts</li>
-        <li>Exploring creative problem-solving</li>
-      </ul>
-    </section>
-
-    <!-- ========== PROJECTS SECTION ========== -->
-    <!-- Edit the three cards: change titles, descriptions, and links when you have real projects -->
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-
-        <article class="project-card">
-          <h3>Sample Project One</h3>
-          <p>A short description of what this project does. Replace this text with your own.</p>
-          <a href="#" class="project-link">View project details</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Sample Project Two</h3>
-          <p>A short description of what this project does. Replace this text with your own.</p>
-          <a href="#" class="project-link">View project details</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Sample Project Three</h3>
-          <p>A short description of what this project does. Replace this text with your own.</p>
-          <a href="#" class="project-link">View project details</a>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ========== CONTACT SECTION ========== -->
-    <!-- Replace the email address with your own safe public email -->
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>
-        You can reach me by email at
-        <a href="mailto:your.safe.public.email@example.com">your.safe.public.email@example.com</a>.
-      </p>
-    </section>
-
+    <div id="app"></div>
   </main>
 
-  <!-- Optional simple footer – change or remove if you like -->
-  <footer>
-    <p>&copy; Your Name. Built with HTML and CSS.</p>
-  </footer>
-
+  <!-- 順序很重要：data → 工具 → 引擎 → UI -->
+  <script src="js/data.js"></script>
+  <script src="js/normalize.js"></script>
+  <script src="js/scale.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/recommend.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
